@@ -54,10 +54,10 @@ context('Regression tests', () => {
 
         cloudPage.getTestAnalytics().should('be.visible')
         cloudPage.scrollToTestAnalytics()
-        cy.get('a[href="#test_analytics"]').should('have.css', 'border-top-color', 'rgb(163, 231, 203)')
-        cy.get('a[href="#test_analytics"]').should('have.css', 'border-bottom-color', 'rgb(163, 231, 203)')
-        cy.get('a[href="#test_analytics"]').should('have.css', 'border-left-color', 'rgb(163, 231, 203)')
-        cy.get('a[href="#test_analytics"]').should('have.css', 'border-right-color', 'rgb(163, 231, 203)')
+        cloudPage.getTabTestAnalytics().should('have.css', 'border-top-color', 'rgb(163, 231, 203)')
+        cloudPage.getTabTestAnalytics().should('have.css', 'border-bottom-color', 'rgb(163, 231, 203)')
+        cloudPage.getTabTestAnalytics().should('have.css', 'border-left-color', 'rgb(163, 231, 203)')
+        cloudPage.getTabTestAnalytics().should('have.css', 'border-right-color', 'rgb(163, 231, 203)')
     })
 
 })

@@ -15,6 +15,10 @@ export class CloudPage extends BasePage {
         return cy.contains('p','Test Analytics')
     }
 
+    getTabTestAnalytics(){
+        return cy.get('a[href="#test_analytics"]')
+    }
+
 
     //Page interactions
 
