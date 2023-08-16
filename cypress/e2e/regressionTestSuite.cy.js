@@ -1,6 +1,6 @@
-import { HomePage } from "../../pages/homePage.cy"
-import { CloudPage } from "../../pages/cloudPage"
-import { AboutUsPage } from "../../pages/aboutUsPage"
+import { HomePage } from "../pages/homePage.cy"
+import { CloudPage } from "../pages/cloudPage"
+import { AboutUsPage } from "../pages/aboutUsPage"
 
 let homePage, cloudPage, aboutUsPage
 
@@ -46,7 +46,7 @@ context('Regression tests', () => {
         cy.url().should('include','/#visual_reviews')
     })
 
-    it.only('(bonus) verifies green circle around Test Analytics tab',() => {
+    it('(bonus) verifies green circle around Test Analytics tab',() => {
         cloudPage = new CloudPage()
         homePage.clickHeaderProduct()
         homePage.getSmartOrchestration().should('be.visible')
